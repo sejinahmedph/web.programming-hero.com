@@ -1,0 +1,78 @@
+/* ================================ */
+/* ============ header ============ */
+/* ================================ */
+#header{
+    background: transparent;
+    backdrop-filter: blur(9.84375px);
+    padding: 0.5rem 2.5rem;
+    display: flex;
+    align-items: center;
+}
+/* logo phero */
+#header #logo-phero{
+    height: 68px;
+    width: 70px;
+    cursor: pointer;
+}
+/* navbar brand */
+#header #navbar-brand{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: -10px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/* header > navbar-links > btn */
+#header .btn{
+    color: white;
+    border: 0px;
+    border-radius: 0px;
+    font-size: 16px;
+}
+#header .btn:hover{
+    background: rgba(255, 255, 255, 0.062);
+}
+/* header > dropdown menu */
+#header .dropdown-menu{
+    background-color: #150F2D;
+}
+/* header > dropdown menu > dropdown item */
+#header .dropdown-menu .dropdown-item{
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+/* header > dropdown menu > dropdown item (hover) */
+#header .dropdown-menu .dropdown-item:hover{
+    background: black;
+}
+
+
+
+
+
+
+/* ================================ */
+/* ========= media query ========== */
+/* ================================ */
+/* max width 991px */
+@media (max-width: 991px) {
+    /* header */
+    #header{
+        padding: 0.5rem 1rem;
+    }
+    /* navbar-link-container */
+    #navbar-link-container{
+        display: none!important;
+    }
+    /* offcanvas navbar */
+    #offcanvasExample{
+        height: 350px;
+        width: 250px;
+        background: rgba(9, 0, 34, 0.836);
+        color: white;
+        border: 1px solid rgba(128, 128, 128, 0.295);
+        margin-top: 84px;
+    }
+}
