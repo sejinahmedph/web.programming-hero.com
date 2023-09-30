@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/course-details_style.css">
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <style>
+      /* banner section */
+      #banner-section{background: url(images/city.jpg) no-repeat;background-size: cover;background-position: center;height: 100vh;}
+    </style>
 </head>
 <body>
     <!-- ============ HEADER START ============ -->
@@ -89,12 +93,106 @@
     </header>
     <!-- ============ HEADER END ============ -->
     <!-- ============ BANNER SECTION START ============ -->
-    <section id="banner-section">
-        <img src="images/city.jpg" style="width: 100%;height: 100vh;" alt="city">
+    <section class="d-flex align-items-center justify-content-center ps-3 pe-3" id="banner-section">
+      <div>
+        <!-- title -->
+        <h1 id="title">Learn Effectively That Will Take You Towards Your Goal</h1>
+        <!-- animation container -->
+        <div class="ps-2 pe-2 pb-2" id="animation-container">
+          <!-- icon html -->
+          <div>
+            <img src="icons/html.svg" id="icon-html" alt="icon-html">
+          </div>
+          <!-- icon tailwind -->
+          <div class="text-center">
+            <img src="icons/tailwind.svg" id="icon-tailwind" alt="icon-tailwind">
+          </div>
+          <!-- icon react -->
+          <div class="text-end">
+            <img src="icons/react.svg" id="icon-react" alt="icon-react">
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ============ BANNER SECTION END ============ -->
-    
+    <!-- ============ MAIN SECTION START ============ -->
+    <section class="ps-3 pe-3 pb-5" id="main-section">
+      <!-- title -->
+      <h1 class="title-color text-center title-600 m-0">Next Batch Schedule</h1><br><br>
+      <!-- next batch shedule container -->
+      <article class="p-5 rounded shadow-lg" id="batch-shedule-container">
+        <div>
+          <!-- batch-shedule-item -->
+          <div class="batch-shedule-item">
+            <span>Enrollment Starts</span>
+            <span>10 December, 2023</span>
+          </div>
+          <!-- batch-shedule-item -->
+          <div class="batch-shedule-item">
+            <span>Enrollment Ends</span>
+            <span>24 December, 2023</span>
+          </div>
+        </div>
+        <div>
+          <!-- batch-shedule-item -->
+          <div class="batch-shedule-item">
+            <span>Orientation Starts</span>
+            <span>28 December, 2023</span>
+          </div>
+          <!-- batch-shedule-item -->
+          <div class="batch-shedule-item">
+            <span>Class Starts</span>
+            <span>30 December, 2023</span>
+          </div>
+        </div>
+      </article>
+      <!-- information -->
+      <div class="text-center text-white pt-3 pb-3">
+        <span class="fs-5">Course Fee <span class="text-green fw-bold">৳5,500</span></span><br>
+        <span class="fs-5">If You Are Interested To <span class="text-green fw-bold">Enroll In 9th Batch</span>, 
+        Register On The Website</span>
+      </div>
+      <!-- What You Will Learn_ From This Course? -->
+      <article id="learn-course-container">
+        <!-- title -->
+        <h1 class="title-color title-600 text-center mb-0 ms-auto me-auto" id="title">What You Will Learn_ From This Course?</h1><br><br><br>
+        <!-- course thumbnail -->
+        <div class="d-flex align-items-center justify-content-center ms-auto me-auto rounded-5 shadow-lg" id="course-thumbnail-container">
+          <!-- btn trigger modal -->
+          <div class="bt bg-white" id="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <!-- icon -->
+            <img src="icons/play.svg" id="icon-play" alt="icon-play">
+          </div>
+          <!-- course-thumbnail-image -->
+          <img src="images/courseThumbnail.jpg" class="rounded-5" id="course-thumbnail-image" alt="course-thumbnail-image">
+        </div>
 
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <!-- modal dialog -->
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <!-- modal content -->
+            <div class="modal-content">
+              <!-- modal header -->
+              <div class="modal-header border-0">
+                <!-- modal close btn -->
+                <button type="button" class="btn-close btn-close-white mt-2 me-2" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- modal body -->
+              <div class="modal-body">
+                <!-- iframe video -->
+                <iframe width="100%" height="461" src="https://www.youtube.com/embed/pJQXGmMofro" 
+                title="Complete Web Development with Programming Hero কোর্সে কেন জয়েন করবে? || Jhankar Mahbub" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen autoplay></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- ============ MAIN SECTION END ============ -->
+    
 
 
     <!-- bootstrap script -->

@@ -1,3 +1,186 @@
 /* ================================ */
 /* ============ banner ============ */
 /* ================================ */
+#banner-section{
+    background-color:rgb(13, 3, 19)!important;
+    border-bottom: 10px solid;
+    border-image: radial-gradient(61.52% 5323.08% at 63.17% 445.74%, 
+                rgb(111, 36, 222) 22%, 
+                rgb(103, 31, 214) 33%, 
+                rgb(80, 26, 191) 52%, 
+                rgb(39, 17, 160) 76%, 
+                rgb(0, 28, 130) 100%);
+    border-image-slice: 1;
+}
+/* banner-section > title */
+#banner-section #title{
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(238, 224, 255);
+    text-align: center;
+    max-width: 850px;
+    margin-bottom: 0px;
+}
+/* animation container */
+#banner-section #animation-container{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+/* html animation */
+@keyframes html {
+    0%{
+        transform: rotate(-13deg);
+        top: 0px;
+    }
+    50%{
+        transform: rotate(-13deg);
+        top: 18px;
+    }
+    100%{
+        transform: rotate(-13deg);
+        top: 0px;
+    }
+}
+/* icon html */
+#banner-section #icon-html{
+    position: relative;
+    animation: html 1.5s infinite;
+}
+/* html tailwind */
+@keyframes tailwind {
+    0%{
+        transform: rotate(-14deg);
+    }
+    50%{
+        transform: rotate(14deg);
+    }
+    100%{
+        transform: rotate(-14deg);
+    }
+}
+/* icon tailwind */
+#banner-section #icon-tailwind{
+    position: relative;
+    animation: tailwind 1.5s infinite;
+}
+/* html react */
+@keyframes react {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* icon react */
+#banner-section #icon-react{
+    position: relative;
+    animation: react 2.5s linear infinite;
+}
+/* ================================ */
+/* ======== main section ========== */
+/* ================================ */
+#main-section{
+    padding-top: 200px;
+    background: linear-gradient(rgb(40, 2, 63) 0%, rgb(1, 3, 19) 62.56%);
+}
+/* batch-shedule-container */
+#batch-shedule-container{
+    max-width: 1170px;
+    background: linear-gradient(260.06deg, rgb(6, 97, 75) -4.88%, rgb(18, 27, 85) 89.47%);
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* batch-shedule-item */
+#batch-shedule-container .batch-shedule-item{
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* green color */
+.text-green{
+    color: rgb(77, 255, 210);
+}
+/* learn-course-container */
+#learn-course-container{
+    padding-top: 100px;
+}
+/* learn-course-container > title */
+#learn-course-container #title{
+    max-width: 850px;
+}
+/* course-thumbnail > play btn */
+#course-thumbnail-container #play-btn{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+@keyframes play {
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+/* course-thumbnail > play btn */
+#course-thumbnail-container #play-btn{
+    position: absolute;
+}
+/* course-thumbnail > play btn > icon */
+#course-thumbnail-container #play-btn #icon-play{
+    animation: play 1s infinite;
+}
+/* modal-content */
+.modal-content{
+    background: linear-gradient(rgb(40, 2, 63) 0%, rgb(1, 7, 58) 62.56%);
+}
+
+
+/* ================================ */
+/* ========= media query ========== */
+/* ================================ */
+/* max width 991px */
+@media (max-width: 991px) {
+    /* banner-section */
+    #banner-section{
+        background-size: contain;
+        background-position: bottom;
+    }
+    /* batch-shedule-container */
+    #batch-shedule-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+        text-align: center;
+    }
+    #course-thumbnail-image{
+        width: 100%;
+    }
+}
+/* max width 550px */
+@media (max-width: 550px) {
+        /* batch-shedule-container > item */
+        #batch-shedule-container .batch-shedule-item{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+}

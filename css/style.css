@@ -1,6 +1,20 @@
 /* ================================ */
 /* ============ header ============ */
 /* ================================ */
+/* body */
+body{
+    background: #010313!important;
+}
+/* title-color */
+.title-color{
+    color: rgb(203, 170, 255);
+}
+/* title_font-size */
+.title-600{
+    font-size: 48px;
+    font-weight: 600;
+}
+/* header */
 #header{
     background: transparent;
     backdrop-filter: blur(9.84375px);
@@ -47,12 +61,6 @@
 #header .dropdown-menu .dropdown-item:hover{
     background: black;
 }
-
-
-
-
-
-
 /* ================================ */
 /* ========= media query ========== */
 /* ================================ */
