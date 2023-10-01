@@ -147,10 +147,74 @@
 #course-thumbnail-container #play-btn #icon-play{
     animation: play 1s infinite;
 }
+.modal-dialog{
+    max-width: 800px!important;
+}
 /* modal-content */
 .modal-content{
     background: linear-gradient(rgb(40, 2, 63) 0%, rgb(1, 7, 58) 62.56%);
 }
+/* ================================ */
+/* ========= info section ========= */
+/* ================================ */
+#info-section{
+    background: linear-gradient(rgb(196, 40, 251) 0%, rgba(138, 47, 235, 0.35) 63.87%, rgba(107, 51, 226, 0) 98.1%);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+/* info container */
+#info-container{
+    width: 900px!important;
+}
+/* info container > row > col */
+#info-container .row .col{
+    background: linear-gradient(to left, rgb(255, 221, 227), white);
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 650;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* paragraph */
+p{
+    margin: 0px!important;
+}
+/* text-info-container */
+#text-info-container{
+    font-size: 1.07rem;
+    font-weight: 500;
+}
+/* course-curriculum */
+#course-curriculum{
+    height: 460px;
+    background: linear-gradient(rgb(92, 22, 158), #150f2d);
+}
+/* course-curriculum item */
+#course-curriculum-item{
+    height: 100%;
+    overflow-y: scroll;
+}
+/* course curriculum item > scrollbar */
+#course-curriculum-item::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(170, 83, 252, 0.877);
+    border-radius: 10px;
+}
+/* course curriculum item > scrollbar-thumb */
+#course-curriculum-item::-webkit-scrollbar-thumb{
+    background: rgb(0, 0, 0);
+    border-radius: 8px;
+}
+/* course-curriculum > btn */
+#course-curriculum .btn{
+    background: rgb(117, 22, 206);
+    border: 0px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 
 /* ================================ */
@@ -158,11 +222,6 @@
 /* ================================ */
 /* max width 991px */
 @media (max-width: 991px) {
-    /* banner-section */
-    #banner-section{
-        background-size: contain;
-        background-position: bottom;
-    }
     /* batch-shedule-container */
     #batch-shedule-container{
         display: grid;
@@ -170,8 +229,17 @@
         gap: 2rem;
         text-align: center;
     }
+    /* course thumbnail > image */
     #course-thumbnail-image{
         width: 100%;
+    }
+    /* iframe */
+    .modal-content iframe{
+        height: 400px!important;
+    }
+    /* info container */
+    #info-container{
+        width: 100%!important;
     }
 }
 /* max width 550px */
@@ -183,4 +251,21 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        /* info container > row */
+        #info-container .row{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+}
+/* max width 400px */
+@media (max-width: 400px) {
+    /* iframe */
+    .modal-content iframe{
+        height: 200px!important;
+    }
+    /* course-curriculum > btn */
+    #course-curriculum .btn{
+        font-size: 15px;
+        font-weight: 600;
+    }
 }

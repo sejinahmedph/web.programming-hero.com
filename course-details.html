@@ -16,6 +16,9 @@
     <style>
       /* banner section */
       #banner-section{background: url(images/city.jpg) no-repeat;background-size: cover;background-position: center;height: 100vh;}
+      @media (max-width: 991px) {
+        #banner-section{background-size: contain;background-position: bottom;}
+      }
     </style>
 </head>
 <body>
@@ -159,18 +162,17 @@
         <!-- course thumbnail -->
         <div class="d-flex align-items-center justify-content-center ms-auto me-auto rounded-5 shadow-lg" id="course-thumbnail-container">
           <!-- btn trigger modal -->
-          <div class="bt bg-white" id="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <div class="bg-white" id="play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <!-- icon -->
             <img src="icons/play.svg" id="icon-play" alt="icon-play">
           </div>
           <!-- course-thumbnail-image -->
           <img src="images/courseThumbnail.jpg" class="rounded-5" id="course-thumbnail-image" alt="course-thumbnail-image">
         </div>
-
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <!-- modal dialog -->
-          <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-dialog modal-dialog-centered">
             <!-- modal content -->
             <div class="modal-content">
               <!-- modal header -->
@@ -182,9 +184,8 @@
               <div class="modal-body">
                 <!-- iframe video -->
                 <iframe width="100%" height="461" src="https://www.youtube.com/embed/pJQXGmMofro" 
-                title="Complete Web Development with Programming Hero কোর্সে কেন জয়েন করবে? || Jhankar Mahbub" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowfullscreen autoplay></iframe>
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share" 
+                allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -192,6 +193,352 @@
       </article>
     </section>
     <!-- ============ MAIN SECTION END ============ -->
+    <!-- ============ ANOTHER SECTION START (INFO) ============ -->
+    <section class="ps-3 pe-3 pt-5" id="info-section">
+      <!-- info container -->
+      <article id="info-container">
+        <!-- row -->
+        <div class="row gap-3 ps-2 pe-2">
+          <!-- col -->
+          <div class="col gap-2 p-3 shadow-lg">
+            <!-- image -->
+            <img src="icons/play.svg" alt="play">
+            <!-- title -->
+            <p>950 Videos</p>
+          </div>
+          <!-- col -->
+          <div class="col gap-2 p-3 shadow-lg">
+            <!-- image -->
+            <img src="icons/quiz.svg" alt="quiz">
+            <!-- title -->
+            <p>45 Projects</p>
+          </div>
+          <!-- col -->
+          <div class="col gap-2 p-3 shadow-lg">
+            <!-- image -->
+            <img src="icons/assignment.svg" alt="assignment">
+            <!-- title -->
+            <p>12 Assignments</p>
+          </div>
+        </div><br><br>
+        <!-- text info container -->
+        <div class="text-white" id="text-info-container">
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>Learn everything you need to become a web developer from one course.</span>
+          </div><br>
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>You will start with HTML, CSS, Bootstrap, Tailwind. Then JavaScript, DOM, API, ES6, debugging, devtool, etc.</span>
+          </div><br>
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>Enter the world of React, React Router, hooks, context api, Tanstack query, recharts, etc.</span>
+          </div><br>
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>Explore server side technology like Node, express, mongodb. Build secure API using JWT tokens.</span>
+          </div><br>
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>Learn the concepts and then apply them in projects. You will learn and build 40+ projects in this course.</span>
+          </div><br>
+          <!-- item -->
+          <div class="d-flex align-items-center gap-3">
+            <!-- image -->
+            <img src="icons/check.svg" alt="check">
+            <!-- info -->
+            <span>A fun and engaging learning strategy development by Programming Hero from years of experience will guide you to finish 
+            all these.</span>
+          </div><br>
+        </div><br><br><br><br>     
+        <!-- course curriculum section -->
+        <div>
+          <!-- title -->
+          <h1 class="title-color title-600 text-center m-0">Course Curriculum</h1><br><br>
+          <!-- course curriculum -->
+        <div class="mt-5 p-4 ms-2 me-2 shadow-lg rounded-5" id="course-curriculum">
+          <!-- items -->
+          <div class="pe-4" id="course-curriculum-item">
+            <!-- btn 1 -->
+            <button class="btn text-start text-white w-100 p-3 rounded-0">Module -1: Welcome Module</button>
+            <!-- btn 2 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 0: Orientation. How to get ready for this course</button>
+            <!-- btn 3 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 1: Learn and Explore HTML as a Beginner</button>
+            <!-- btn 4 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 2: Learn and Explore CSS as a Beginner</button>
+            <!-- btn 5 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 3: Git, source control, GitHub and hosting</button>
+            <!-- btn 6 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 4: Build a beautiful and professional portfolio 
+            website</button>
+            <!-- btn 7 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 4.5: Revision/Practice and Conceptual day 1</button>
+            <!-- btn 8 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 5: Personal website, build a brand new website</button>
+            <!-- btn 9 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 5.5: [Bonus] Box model, pseudo class, position</button>
+            <!-- btn 10 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 6: HTML 5 Semantic tags, audio, video, table, form</button>
+            <!-- btn 11 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 7: More CSS, Icon, CSS3 animation</button>
+            <!-- btn 12 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 8: Responsive CSS Layout</button>
+            <!-- btn 13 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 9:  HTML CSS only Landing Page</button>
+            <!-- btn 14 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 9.5:  HTML5 CSS3 Practice Day</button>
+            <!-- btn 15 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 10: Responsive Website Assignment 2</button>
+            <!-- btn 16 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 10.5: [Bonus] UI UX, future strategy about html, 
+            css</button>
+            <!-- btn 17 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 11: Magic of Bootstrap (Getting started)</button>
+            <!-- btn 18 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 12: Responsive Layout using Bootstrap</button>
+            <!-- btn 19 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 12.5: Bootstrap Review and Practice </button>
+            <!-- btn 21 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 13: Simple ecommerce landing page using Bootstrap</button>
+            <!-- btn 22 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 14: A simple Introduction to Tailwind</button>
+            <!-- btn 23 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 14_5: Practice/Revision and Conceptual Day 2</button>
+            <!-- btn 24 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 15: Responsive Landing Page Assignment</button>
+            <!-- btn 25 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 15_5: HTML, CSS, Bootstrap Bonus</button>
+            <!-- btn 26 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 16: Introduction to JavaScript</button>
+            <!-- btn 27 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 17: Fundamental Concepts Array and conditionals</button>
+            <!-- btn 28 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 18: Loop and Practice Problems</button>
+            <!-- btn 29 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 18.5: Practice Variable, Array, Conditionals, Loop</button>
+            <!-- btn 30 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 19: Core Concepts, functions and objects</button>
+            <!-- btn 31 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 20: Apply Javascript Concepts</button>
+            <!-- btn 32 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 20.5: JS Concept Recap</button>
+            <!-- btn 33 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 21: JavaScript Simple Coding Problems</button>
+            <!-- btn 34 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 22: More JS Coding Problems</button>
+            <!-- btn 35 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 22.5: Practice Basic JavaScript </button>
+            <!-- btn 36 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 23: Assignment</button>
+            <!-- btn 37 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 23.5: Basic JavaScript Bonus Module</button>
+            <!-- btn 38 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 24: Tour of DOM (Document Object Model)</button>
+            <!-- btn 39 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 25: Event, addEventListener, Event bubble</button>
+            <!-- btn 40 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 25-5: HTML, CSS, DOM Revision Day</button>
+            <!-- btn 41 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 26: Simple Interactive bank website 
+            ( Baap Er Bank )</button>
+            <!-- btn 42 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 27: Bank Calculation Using Functions(advanced)</button>
+            <!-- btn 43 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 27_5: Shopping Cart, develop an interactive Cart</button>
+            <!-- btn 44 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 28: Shopping Cart and Pin Matcher</button>
+            <!-- btn 45 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 28.5: Practice and revision day</button>
+            <!-- btn 46 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 29: Money Master DOM and JavaScript Assignment</button>
+            <!-- btn 47 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 29.5: Integrate Javascript Bonus Content</button>
+            <!-- btn 48 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 30: JS Recap and  Basic ES6, ES2015</button>
+            <!-- btn 49 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 31: (advanced) ES6, Class, Inheritance</button>
+            <!-- btn 50 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 31.5 ES6 Recap and Practice</button>
+            <!-- btn 51 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 32: API, JSON, Data load, dynamic website</button>
+            <!-- btn 52 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 33: API Examples and edge cases</button>
+            <!-- btn 53 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 33.5: Recap and Even more API Examples</button>
+            <!-- btn 54 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 34: API Recap with Phone Hunter</button>
+            <!-- btn 55 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 35: (advanced) Mastering in JS Objects</button>
+            <!-- btn 56 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 35.5 Have a World tour with API</button>
+            <!-- btn 57 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 36: Assignment 6</button>
+            <!-- btn 58 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 36.5: Bonus API and JS Recap Concepts</button>
+            <!-- btn 59 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 37: How JavaScript and Browser works</button>
+            <!-- btn 61 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 38: Explore Browser API and methods </button>
+            <!-- btn 62 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 38.5: Browser API practice</button>
+            <!-- btn 63 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 39: Understand Common JavaScript Concepts</button>
+            <!-- btn 64 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 40: Dev Tool and Debug projects </button>
+            <!-- btn 65 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 40.5: Browser API practice</button>
+            <!-- btn 66 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 41: Few More JavaScript and Debug</button>
+            <!-- btn 67 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module: 42: JavaScript You need to know for React</button>
+            <!-- btn 68 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 42.5: Devtool and debug practice</button>
+            <!-- btn 69 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 43: Assignment -7</button>
+            <!-- btn 70 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 43.5: Browser Debug bonus video</button>
+            <!-- btn 71 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 44: Modern Front-end core concepts</button>
+            <!-- btn 72 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 45: React Core Concepts, JSX, props, state</button>
+            <!-- btn 73 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 46: Simple React Rest Countries</button>
+            <!-- btn 74 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 46.5: React Core Concept Recap and Practice day</button>
+            <!-- btn 75 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 47: (Conceptual) How React works</button>
+            <!-- btn 76 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 47.5: Modules and data storage Integration</button>
+            <!-- btn 77 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 48: Simple React SPA with simple e-commerce</button>
+            <!-- btn 78 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 49: (advanced) Cart calculation, Save and Retrieve 
+            cart</button>
+            <!-- btn 79 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 49.5: Simple React Revision day</button>
+            <!-- btn 80 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 50: React SPA Assignment 8</button>
+            <!-- btn 81 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 50.5: Simple React Bonus</button>
+            <!-- btn 82 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 51:  Bootstrap, Tailwind CSS, Axios, Rechart</button>
+            <!-- btn 83 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 52: Simple React Router Examples</button>
+            <!-- btn 84 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 52.5 Meal db search and routing</button>
+            <!-- btn 85 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 53: ema-john with router and custom hook</button>
+            <!-- btn 86 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 54: Router deploy, Simple Context API, devtool</button>
+            <!-- btn 87 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 54_5: React Router Practice</button>
+            <!-- btn 88 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 55: Educational Website Assignment 9</button>
+            <!-- btn 89 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 55.5: React Router bonus content</button>
+            <!-- btn 90 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 56: Simple React Firebase authentication</button>
+            <!-- btn 91 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 57: Email Password Authentication, Login Form</button>
+            <!-- btn 92 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 57.5: Firebase Recap and Practice</button>
+            <!-- btn 93 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 58: React Auth Integration and Private Route</button>
+            <!-- btn 94 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 59: Private Route Recap with Ema-John</button>
+            <!-- btn 95 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 60: Recap with a Responsive React Website</button>
+            <!-- btn 96 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 60.5: Firebase auth and private Route Recap </button>
+            <!-- btn 97 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 61: Firebase Auth Recap and Data load</button>
+            <!-- btn 98 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 62: Build a Authentication System for Dragon News</button>
+            <!-- btn 99 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 62.5: Firebase auth and Simple Site Practice</button>
+            <!-- btn 100 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 63: React Auth Assignment 10 [2 days]</button>
+            <!-- btn 101 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 63.5: Dynamic Title and Google Map</button>
+            <!-- btn 102 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 64: Getting Started with Node, Express and Api</button>
+            <!-- btn 103 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 65: Mongodb, database integration, CRUD</button>
+            <!-- btn 104 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 66: Genius Car Home and Simple Auth</button>
+            <!-- btn 105 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 66.5: CRUD Update and Product Management Practice</button>
+            <!-- btn 106 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 67: Genius Car Node Mongo CRUD Recap</button>
+            <!-- btn 107 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 68: Pagination and Load Data by filter</button>
+            <!-- btn 108 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 69: Introduction to JWT and Secure API using JWT</button>
+            <!-- btn 109 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 70: Backend Database Milestone Assignment</button>
+            <!-- btn 110 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 70.5: (Conceptual) JWT token and Pagination</button>
+            <!-- btn 111 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 71: Final Project Part-1 (Home page)</button>
+            <!-- btn 112 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 72: Final Project Part-2 (Appointment)</button>
+            <!-- btn 113 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 73: Final Project Part-3 (Auth Recap)</button>
+            <!-- btn 114 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 73-5 Final Project Practice and Read Documentation</button>
+            <!-- btn 115 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 74: Final Project Part-4 (Dashboard)</button>
+            <!-- btn 116 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 75: Final Project Part-5 (Admin Role)</button>
+            <!-- btn 117 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 75.5: Practice Understand and practice Admin Role</button>
+            <!-- btn 118 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 76: Final Project Part-6</button>
+            <!-- btn 119 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 77: Final Project Part-7 (Payment)</button>
+            <!-- btn 120 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 77.5: Final Project Deploy and Practice</button>
+            <!-- btn 121 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 78: Build your own Complete Project</button>
+            <!-- btn 122 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 78-5: Send Email to client and publish your private 
+            repository</button>
+            <!-- btn 124 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 79: Explore Material UI</button>
+            <!-- btn 125 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 80: Introduction to State Management in React</button>
+            <!-- btn 126 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 81: Explore Typescript</button>
+            <!-- btn 127 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 82: Let's Dive into Next js</button>
+            <!-- btn 128 -->
+            <button class="btn text-start text-white w-100 p-3 mt-2 rounded-0">Module 83: Interview Preparation and Get Ready to be 
+            hired</button>
+          </div>
+        </div>
+        </div>
+      </article>
+      <!-- more Info -->
+      
+    </section>
+    <!-- ============ ANOTHER SECTION END ============ -->
     
 
 
