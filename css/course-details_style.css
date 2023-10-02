@@ -212,11 +212,11 @@ p{
     background: rgb(117, 22, 206);
     border: 0px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 650;
 }
-
-
-
+#course-curriculum .btn:hover{
+    background: rgb(78, 12, 139);
+}
 /* ================================ */
 /* ====== speciality section ====== */
 /* ================================ */
@@ -301,8 +301,6 @@ p{
     font-size: 64px!important;
     margin-top: -130px;
 }
-
-
 /* ================================ */
 /* ========= media query ========== */
 /* ================================ */
