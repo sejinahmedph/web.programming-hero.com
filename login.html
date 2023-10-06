@@ -5,69 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Success Programming Hero</title>
+    <title>About Programming Hero</title>
     <!-- fav icon -->
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <!-- css stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/success_style.css">
+    <link rel="stylesheet" href="css/auth.css">
     <!-- bootstrap stylesheet -->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <style>
+        /* body */
+        body{background: linear-gradient(#010425, #010313)!important;}
+
         /* main section */
-        #main-section{
-          padding-top: 140px;
-          padding-bottom: 80px;
-        }
+        #main-section{background: url(images/bg-login.svg) no-repeat;background-size: 800px;background-position: top;
+                      background-position-x: right;height: 130vh;}
         /* footer */
         #footer{background: url(images/footerbg.jpg) no-repeat;background-size: cover;}
-        /* sejin pic */
-        #sejin-pic{
-          height: 400px;
-          border-bottom-left-radius: 100px;
-          border-bottom-right-radius: 100px;
-          border-top-right-radius: 100px;
-          background: url(images/glow-bg.png) no-repeat;
-          background-size: cover;
-          box-shadow: 0rem 0.5rem 1.5rem rgb(196, 40, 251);
-        }
-        /* certificate */
-        #certificate{
-          width: 75%;
-        }
-        /* anchor */
-        a{
-          text-decoration: none;
-          color: white;
-        }
-        #main-section a:hover{
-          text-decoration: underline;
-        }
-        /* media query */
-        @media (max-width: 991px) {
-          /* developer info */
-          #developer-info{
-            display: grid!important;
-            grid-template-columns: repeat(1, 1fr);
-            gap: 2rem!important;
-            padding: 1rem;
-          }
-          /* sejin pic */
-          #sejin-pic{
-            height: 300px;
-          }
-          /* certificate */
-          #certificate{
-            width: 100%;
-          }
-        }
-        /* max width 500px */
-        @media (max-width: 500px) {
-          /* image container */
-          #image-container{
-            text-align: center;
-          }
-        }
     </style>
 </head>
 <body>
@@ -143,42 +97,14 @@
         </nav>
     </header>
     <!-- ============ HEADER END ============ -->
-    <!-- ============ MAIN SECTION START ============ -->
+    <!-- ============ SECTION START ============ -->
     <section id="main-section">
-      <!-- container -->
-      <article class="container pb-5">
-        <!-- developer info -->
-        <div class="d-flex align-items-center gap-5" id="developer-info">
-          <!-- image container -->
-          <div id="image-container">
-            <!-- sejin pic -->
-            <img src="images/sejin.png" id="sejin-pic" alt="sejin-pic">
-          </div>
-          <!-- info container -->
-          <div class="text-white">
-            <!-- name -->
-            <span class="fs-2">Md. Sejin Ahmed</span><br>
-            <span class="fs-3">Junior Web Developer</span><br><br>
-            <!-- comment -->
-            <span class="fs-5">I am Sejin Ahmed. I read in class eight. I have completed Programming Hero's Web course. I learned HTML, 
-            CSS, Bootstrap, GitHub, JavaScript and more from this course. I can build any simple website. My goal is to build many 
-            websites and learn advanced topics.  I will not stop until I become the Web Development Hero. I want to be the best Web 
-            Developer in the world.</span>
-          </div>
-        </div><br><br>
-        <!-- certificate container -->
-        <div class="text-center py-3">
-          <!-- title -->
-          <h1 class="title-color my-5">Certificate Of Completion With Exellence</h1>
-          <!-- certificate -->
-          <img src="images/certificate.jpg" class="shadow-lg" id="certificate" alt="certificate"><br><br>
-            <!-- certificate link -->
-            <a href="http://app.programming-hero.com/certificates/PH27914" 
-            target="_blank" download>http://app.programming-hero.com/certificates/PH27914</a>
-        </div>
-      </article>
+        <article id="login-section">
+
+        </article>
     </section>
-    <!-- ============ MAIN SECTION END ============ -->
+    <!-- ============ SECTION END ============ -->
+
     <!-- ============ FOOTER ============ -->
     <footer id="footer">
         <!-- container -->
